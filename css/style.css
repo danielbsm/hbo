@@ -1,0 +1,322 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: Gilroy,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+body {
+    background-color: #030328;
+}
+
+small {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+header {
+    max-width: 1920px;
+    height: 50px;
+    background-color: #030328;
+}
+
+.opacidade {
+    width: 100%;
+    background: rgba(5, 15, 37, 0.651);
+    height: 40px;
+    margin-top: -30px;
+}
+
+.nav-bar{
+    background: rgba(0, 0, 0, .3);
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+    z-index: 999;
+}
+
+.brand {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-left: 1rem;
+}
+
+.brand img {
+    width: 160px;
+    height: 27px;
+}
+
+.menu {
+    margin-right: 1rem;
+}
+
+.menu a {
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 700;
+    transition: all 0.5s !important;
+    cursor: pointer;
+    margin-right: 18px;
+    letter-spacing: .2em;
+}
+
+.menu button {
+    background-color: #b535f6;
+    border: 2px solid transparent;
+    padding: .55rem 1.2rem;
+    letter-spacing: .2em;
+    transition: all 0.5s !important;
+    transition-property: background-color,color,border;
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 2.7rem;
+}
+
+main {
+    height: 850px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: url("/img/bg.jpg");
+    background-position: center center;
+    background-size: 1920px;
+    height: 800px;
+}
+
+.box-assinatura {
+    justify-content: center;
+    align-content: center;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.informacoes-assinatura h1 {
+    font-size: 2rem;
+}
+
+.informacoes-assinatura h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.informacoes-assinatura hr {
+    background: url('/img/separador_preco.webp') no-repeat center;
+    background-size: 100%;
+    height: 16px;
+    border: none;
+}
+
+.preco-assinatura p {
+    font-size: 1.125rem;
+    margin-top: 10px;
+}
+
+.text-left {
+    padding-bottom: 10px;
+}
+
+.text-left strong {
+    font-size: 2em;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+.preco-assinatura {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.preco-assinatura a {
+    background: linear-gradient( 
+345deg
+, rgba(73,12,176,1) 0%, rgba(155,52,239,1) 33%, rgba(255,255,255,0) 66%, rgba(255,255,255,0) 100% );
+    background-position: 99% 50%;
+    background-size: 400% 400%;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: all 0.5s !important;
+    border: 2px solid transparent;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: .2em;
+    padding: 0.55em 1.5em 0.5em;
+    font-size: 1rem;
+    width: 10rem;
+}
+
+.planos {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/img/section-planos.png');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+.planos h3 {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-bottom: 0;
+}
+
+.box-selecione-assinatura {
+    display: flex;
+    justify-content: center;
+}
+
+.radios-inner {
+    display: flex;
+    background: rgba(255,255,255,0.12);
+    border-radius: 999px;
+    width: 510px;
+    margin-top: 45px;
+    padding: 5px 0;
+}
+
+.radios-planos {
+    max-width: 170px;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+    z-index: 1;
+}
+
+.radios-planos label{
+    color: rgba(255,255,255,0.9);
+    margin: 0;
+    border-radius: 999px;
+    cursor: pointer;
+    text-align: center;
+    transition: color .3s ease;
+    z-index: 1;
+    width: 100%;
+    font-size: 18px;
+    height: 100%;
+    font-weight: 600;
+}
+
+.economize-plano {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.economize-plano-info {
+    width: 120px;
+    margin: 10px 10px 0 30px;
+    font-weight: 600;
+}
+
+.box-selecione-planos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 50px auto;
+}
+
+.selecione-plano {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0) 100%);
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    padding: 38px;
+    max-width: 509px;
+    margin: 0 37px;
+}
+
+.plano-container {
+    min-height: 480px;
+}
+
+.info-dispositivos {
+    margin: 0 auto;
+}
+
+.info-dispositivos span:first-child { 
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
+.dispositivos-plano {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.preco-plano {
+    font-size: 28px;
+    text-align: right;
+    float: right;
+}
+
+.preco-plano > strong {
+    color: #FF00E5;
+}
+
+.descricao-plano {
+    margin-top: 50px;
+    width: 433px;
+}
+
+.lista-plano {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-plano li {
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.lista-plano li::before {
+    content: '+ ';
+    position: absolute;
+    left: 0;
+}
+
+.btn-plano {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    
+}
+
+.btn-plano a{
+    background: linear-gradient(345deg, #490cb0 0%, #9b34ef 33%, rgba(255,255,255,0) 66%, rgba(255,255,255,0) 100%);
+    border-radius: 67.2055px;
+    letter-spacing: 1.37994px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 337px;
+    line-height: 46px;
+    display: inline-block;
+    text-align: center;
+    font-size: 15.1793px;
+    width: 100%;
+    background-position: 99% 50%;
+    background-size: 400% 400%;
+    border: 2px solid transparent;
+    text-decoration: none;
+}
